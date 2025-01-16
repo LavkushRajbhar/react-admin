@@ -64,42 +64,42 @@ const columns = [
 const Dashboard = () => {
   return (
     <div>
-      <h3 className="mb-4">Dashboard</h3>
+      <h3 className="mb-4 title">Dashboard</h3>
       <div className="d-flex justify-content-around align-items-center gap-3">
         <div className="d-flex justify-content-between align-items-end flex-grow-1 bg-white p-3 rounded-3">
           <div>
             <p className="">Total</p>
-            <h4 className="mb-0">$1000</h4>
+            <h4 className="mb-0 sub-title">$1000</h4>
           </div>
           <div className="d-flex align-items-end flex-column ">
-            <h6 className=""><BsArrowDownRight className="me-1" />32%</h6>
-            <p className="mb-0">Compared To April 2024</p>
+            <h6 className="green"><BsArrowDownRight className="me-1" />32%</h6>
+            <p className="mb-0 desc">Compared To April 2024</p>
           </div>
         </div>
         <div className="d-flex justify-content-between align-items-end flex-grow-1 bg-white p-3 rounded-3">
           <div>
             <p className="">Total</p>
-            <h4 className="mb-0">$1000</h4>
+            <h4 className="mb-0 sub-title">$1000</h4>
           </div>
           <div className="d-flex align-items-end flex-column ">
             <h6 className="red"><BsArrowDownRight className="me-1" />32%</h6>
-            <p className="mb-0">Compared To April 2024</p>
+            <p className="mb-0 desc">Compared To April 2024</p>
           </div>
         </div>
         <div className="d-flex justify-content-between align-items-end flex-grow-1 bg-white p-3 rounded-3">
           <div>
             <p className="">Total</p>
-            <h4 className="mb-0">$1000</h4>
+            <h4 className="mb-0 sub-title">$1000</h4>
           </div>
           <div className="d-flex align-items-end flex-column ">
             <h6 className="green" ><BsArrowDownRight className="me-1" />32%</h6>
-            <p className="mb-0">Compared To April 2024</p>
+            <p className="mb-0 desc">Compared To April 2024</p>
           </div>
         </div>
       </div>
-      <div className="d-flex gap-3 justify-content-between">
-        <div className="mt-4 flex-grow-1 w-50">
-          <h3 className="mb-4">Income Statics</h3>
+      <div className="">
+        <div className="mt-4 w-100">
+          <h3 className="mb-5 title">Income Statics</h3>
           <div>
             {/* Google Chart */}
             <Chart
@@ -110,15 +110,15 @@ const Dashboard = () => {
             />
           </div>
         </div>
-        <div className="mt-4 flex-grow-1 w-50">
-          <h3 className="mb-4">Recent Orders</h3>
+        <div className="mt-4 flex-grow-1 w-100">
+          <h3 className="mb-4 title">Recent Orders</h3>
           <div>
             <Table dataSource={dataSource} columns={columns} />
           </div>
         </div>
       </div>
       <div className="mt-4">
-        <h3 className="mb-4">Recent Reviews</h3>
+        <h3 className="mb-4 title">Recent Reviews</h3>
         <div className="">
           <div></div>
           <div></div>

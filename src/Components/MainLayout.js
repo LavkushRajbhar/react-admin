@@ -6,7 +6,7 @@ import {
 import { Button, Layout, Menu, theme } from 'antd';
 import { AiOutlineAlert, AiOutlineBgColors, AiOutlineDashboard, AiOutlineFontColors, AiOutlineOrderedList, AiOutlineShop, AiOutlineShoppingCart, AiOutlineUser } from 'react-icons/ai';
 import { ImBlog, ImBlogger } from 'react-icons/im'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { SiBrandfolder, SiBrave } from 'react-icons/si'
 import { BiCategory, BiCategoryAlt } from 'react-icons/bi'
 import { FaBlogger, FaBloggerB, FaClipboard } from 'react-icons/fa'
@@ -162,12 +162,17 @@ const MainLayout = () => {
               <div>
                 <img src="https://avatars.slack-edge.com/2025-01-03/8241172274997_09e02f46656562a7fe54_72.png" alt="" className='w-75' />
               </div>
-              <div>
+              <div role='button' id='dropdownMenuLink' data-bs-toggle='dropdown' aria-expanded="false">
                 <h5 className='text-dark mb-1'>Lavkush</h5>
                 <h6 className=''>lavkush@gmail.com</h6>
               </div>
+              <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><Link className="dropdown-item py-1 mb-1" style={{ "height": "auto", "lineHeight": "25px" }} to="#">View Profile</Link></li><hr className='m-0 p-0'/>
+                <li><Link className="dropdown-item py-1 mb-1" style={{ "height": "auto", "lineHeight": "25px" }} to="#">Logout</Link></li>
+              </ul>
             </div>
           </div>
+
         </Header>
         <Content
           style={{

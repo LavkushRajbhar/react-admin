@@ -35,7 +35,7 @@ for (let i = 0; i < 10; i++) {
 }
 const ColorList = () => {
     return (
-        <div><h3 className="mb-4">Color List</h3>
+        <div><h3 className="mb-4 title">Color List</h3>
             <div>
                 <Table dataSource={data1} columns={columns} />
             </div>

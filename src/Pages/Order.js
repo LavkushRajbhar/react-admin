@@ -35,7 +35,7 @@ for (let i = 0; i < 10; i++) {
 }
 const Orders = () => {
     return (
-        <div><h3 className="mb-4">Orders</h3>
+        <div><h3 className="mb-4 title">Orders</h3>
             <div>
                 <Table dataSource={data1} columns={columns} />
             </div>

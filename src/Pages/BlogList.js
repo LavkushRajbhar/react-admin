@@ -35,7 +35,7 @@ for (let i = 0; i < 10; i++) {
 }
 const BlogList = () => {
     return (
-        <div><h3 className="mb-4">Blog List</h3>
+        <div><h3 className="mb-4 title">Blog List</h3>
             <div>
                 <Table dataSource={data1} columns={columns} />
             </div>
